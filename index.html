@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Honey</title>
+  <link rel="stylesheet" href="libs/modal/modal.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/shops.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top" id="header__top">
+           <nav class="menu" >
+              <ul class="menu__list">
+                <li class="menu__item">
+                <a  class="menu__link"  href="../shop.html">
+                ПРОДУКЦИЯ
+                </a>
+                </li>
+                <li class="menu__item">
+                <a  class="menu__link"  href="../info.html">
+                ДОСТАВКА И ОПЛАТА 
+                </a>
+                </li>
+              </ul>
+           </nav>
+           <a class="phone" href="tel:79788861235"> +7 978 886 12 35</a>
+           <div class="header__cart cart" tabindex="0">
+            <div class="cart__text">
+              Корзина
+              <span class="cart__quantity">0</span>
+            </div>
+            <div class="cart-content">
+             <ul class="cart-content__list" data-simplebar>    
+                <!-- <li class="cart-content__item">
+                 <article class="cart-content__product">
+                     <img src="images/m-1.jpg" alt="" class="cart-product__img">
+                        <div class="cart-product__text">
+                          <h3 class="cart-product__title"> ...</h3>
+                         <span class="cart-product__price"> ... ₽</span>
+                       </div>
+                    <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                 </article>
+             </li> -->
+             </ul>
+             <div class="cart-content__bottom">
+               <div class="cart-content__fullprice">
+                 <span>Итого:</span>
+                 <span class="fullprice"></span>
+               </div>
+               <button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp" >Перейти в корзину</button>
+             </div>
+       </div>
+       </div>  
+    </div>
+
+        <div class="header__content" id="header__content">
+          <h1 class="header__title">
+            КРЫМСКИЙ МЁД
+          </h1>
+          <div class="header__text">
+            <p>Вкусно!</p>
+            <p>Полезно!</p>
+            <p>Экологично!</p>
+            <p>Натурально!</p>
+          </div>
+          <button onclick="document.location='../shop.html'" class="header__btn">
+            Хочу купить!
+          </button>
+        </div>
+
+        <div class="header__description">
+             <p class="header__description-text">
+              Мед — древнейшее лакомство на земле.
+            </p>
+            <p class="header__description-text">
+              В состав мёда входит более 300 разных полезных веществ.
+            </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="info-info">
+   <div class="container">
+      <h1 class="header__info-title">
+         О НАС:
+      </h1>
+    <div class="header__info-text">
+        <p class="info-text">
+          - Наша пасека находится в центральной части степного Крыма. Кочуем на медоносы в предгорной части полуострова. 
+          В составе пасеки 50 пчелиных семей. Выкачка свежего меда происходит в конце мая – начале июня.
+          Травы медоносы: кориандр, шалфей, лаванда, донник, осот, чистец, деревья – софора, акация, липа и гледичия обыкновенная.
+        </p>
+        <p class="info-text">
+          - Наши пчелы трудятся в экологически чистых, заповедных районах Крыма и делают самый вкусный натуральный мед.
+          В течении одного сезона мы собираем мёд в степях и садах.
+          Реликтовая лесная растительность и горное разнотравье – отличает Крым от прочих пчеловодческих регионов России. 
+          Флора и фауна полуострова, Черное море и горы создают уникальный крымский мед.
+        </p>
+     </div>
+   </div>
+  </div>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+    <div
+        class="slide"
+        style="background-image: url('https://images.unsplash.com/photo-1589485046718-89eb9eccc9f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');"
+    >
+    </div>
+    <div
+        class="slide"
+        style="
+            background-image: url('https://images.unsplash.com/photo-1548365329-c628c7005461?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+          "
+    >
+    </div>
+    <div
+        class="slide"
+        style="
+            background-image: url('https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80');
+          "
+    >
+    </div>
+    
+    <div
+        class="slide"
+        style="
+            background-image: url('https://images.unsplash.com/photo-1586616780827-13166a8d449b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80');
+          "
+    >
+    </div>
+    <div
+        class="slide"
+        style="
+            background-image: url('https://images.unsplash.com/photo-1518225334563-21a38e9def27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+          "
+    >
+    </div>
+  </div>
+  </div>  
+ </footer>
+
+
+ 
+ <section class="feedback">
+  <div class="container">
+    <div class="feedback__inner">
+      <img  class="feedback__images" src="https://images.unsplash.com/photo-1458419948946-19fb2cc296af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80 alt="">
+      <form class="feedback__form">
+        <h3 class="feedback__title">
+          Остались вопросы?
+        </h3>
+        <p class="feedback__text">
+          Мы свяжемся с вами и проконсультируем по любому вопросу
+        </p>
+        <input class="feedback__input" placeholder="Имя" type="text">
+        <input class="feedback__input" placeholder="Телефон" type="text">
+        <input class="feedback__input" placeholder="everwoods@gmail.com" type="email" name="Email">
+        <button class="feedback__btn" type="submit">ОСТАВИТЬ ЗАЯВКУ
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="modal">
+  <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+    <div class="modal-content order-modal__content">
+      <div class="order-modal__top">
+        <h2 class="order-modal__title">Оформление заказа</h2>
+        <span class="order-modal__number">Заказ № 345667</span>
+      </div>
+      <div class="order-modal__info">
+        <div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span> </span></div>
+        <div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span> </span></div>
+        <div class="order-modal__products order-modal__info-item">
+          <button class="order-modal__btn">Состав заказа</button>
+          <ul class="order-modal__list">
+              <li class="order-modal__item">
+              <article class="order-modal__product order-product">
+                <img src="img/macbook.jpg" alt="" class="order-product__img">
+                <div class="order-product__text">
+                  <h3 class="order-product__title"></h3>
+                  <span class="order-product__price"> </span>
+                </div>
+                <button class="order-product__delete">Удалить</button>
+              </article>
+            </li> 
+          </ul>
+        </div>
+      </div>
+      <form action="#" class="order-modal__form order">
+        <input type="hidden" name="theme" value="Обратный звонок">
+        <input type="hidden" name="admin_email[]" value="everwoods21011993@gmail.com">
+        <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+        <label class="order__label">
+          <span class="order__text">Ваше имя</span>
+          <input type="text" name="Имя" class="order__input">
+        </label>
+        <label class="order__label">
+          <span class="order__text">Номер телефона</span>
+          <input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
+        </label>
+        <label class="order__label">
+          <span class="order__text">Ваше email</span>
+          <input type="email" name="Email" class="order__input" placeholder="everwoods@gmail.com">
+        </label>
+        <button class="order__btn btn">Оформить заказ</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+ <map class="map">
+   <div class="container">
+    <div  class="map_krym">
+     <h1>Место производста нашего мёда самое сердце степного Крыма</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126427.7317848197!2d34.07726394167223!3d45.556670403348555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ea73e625f2b04f%3A0x701251b477be216c!2z0JDQu9C10LrRgdCw0L3QtNGA0L7QstC60LA!5e0!3m2!1sru!2s!4v1633028080147!5m2!1sru!2s" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+   </div>
+ </map> 
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="libs/modal/modal.js"></script>
+ <script src="js/fixed-block.js"></script>
+ <script src="js/cart.js"></script>   
+ <script src="js/slick.min.js"></script>
+ <script src="js/jquery.fancybox.min.js"></script>
+ <script src="js/main.js"></script>
+ <script src="js/simplebar.js"></script>
+ <script src="js/product.js"></script>
+</body>
+</html>

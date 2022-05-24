@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shop</title>
+  <link rel="stylesheet" href="libs/modal/modal.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/shops.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+  
+ <header class="header-shop-header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__top" id="header__top">
+          <nav class="menu" >
+             <ul class="menu__list">
+               <li class="menu__item">
+               <a  class="menu__link"  href="../index.html">
+               ГЛАВНАЯ
+               </a>
+               </li>
+               <li class="menu__item">
+               <a  class="menu__link"  href="../info.html">
+               ДОСТАВКА И ОПЛАТА
+               </a>
+               </li>
+             </ul>
+          </nav>
+          <a class="phone" href="tel:79788861235"> +7 978 886 12 35</a>  
+          <div class="header__cart cart" tabindex="0">
+               <div class="cart__text">
+                 Корзина
+                 <span class="cart__quantity">0</span>
+               </div>
+               <div class="cart-content">
+                <ul class="cart-content__list" data-simplebar>    
+                   
+                </ul>
+                <div class="cart-content__bottom">
+                  <div class="cart-content__fullprice">
+                    <span>Итого:</span>
+                    <span class="fullprice"></span>
+                  </div>
+                  <button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp" >Перейти в корзину</button>
+                </div>
+              </div>
+          </div>  
+     </div> 
+  
+
+  <div class="containers">
+     <div class="products-content grid-container">
+			<div class="filters">
+				<div class="filters__item filters-price">
+					<h3 class="filters-price__title"></h3>
+					<div class="filters-price__slider"></div>
+					<div class="filters-price__inputs">
+						<input type="text" class="filters-price__input">
+						<input type="text" class="filters-price__input">
+					</div>
+				</div>
+			</div>
+     
+      <ul class="products-grid"  id="productGrid">
+         <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-1.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-2.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-3.jpg" alt="Мёд"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a>
+            <h3 class="product__title">
+              <a href="#">Мед разнотравье  1л</a>
+            </h3>
+            <div class="product__props">
+              <span class="product__rating">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                  />
+                </svg>
+                4,5
+              </span>
+              <span class="product__testimonials">2 отзыва</span>
+            </div>
+            <div class="product__info">
+              <span class="product__term">Артикул: 210101</span>
+              <span class="product__available">Есть в наличии</span>
+            </div>
+            <div class="product__price product-price">
+              <span class="product-price__current">800 ₽</span>
+              <span class="product-price__old">950 ₽</span>
+            </div>
+            <div class="items__wrapper items__wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+            <button class="product__btn">Добавить в корзину</button>
+          </article>
+         </li>
+         <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-1.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-2.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-3.jpg" alt="Мёд"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a>
+            <h3 class="product__title">
+              <a href="#">Кориандр   1л</a>
+            </h3>
+            <div class="product__props">
+              <span class="product__rating">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                  />
+                </svg>
+                4,8
+              </span>
+              <span class="product__testimonials">4 отзыва</span>
+            </div>
+            <div class="product__info">
+              <span class="product__term">Артикул: 210102</span>
+              <span class="product__available">Есть в наличии</span>
+            </div>
+            <div class="product__price product-price">
+              <span class="product-price__current">800 ₽</span>
+              <span class="product-price__old">1050 ₽</span>
+            </div>
+            <div class="items__wrapper items__wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+            <button class="product__btn">Добавить в корзину</button>
+          </article>
+         </li>
+         <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-1.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-2.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-3.jpg" alt="Мёд"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a>
+            <h3 class="product__title">
+              <a href="#">Подсолнух  1л</a>
+            </h3>
+            <div class="product__props">
+              <span class="product__rating">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                  />
+                </svg>
+                4,6
+              </span>
+              <span class="product__testimonials">4 отзыва</span>
+            </div>
+            <div class="product__info">
+              <span class="product__term">Артикул: 210103</span>
+              <span class="product__available">Есть в наличии</span>
+            </div>
+            <div class="product__price product-price">
+              <span class="product-price__current">800 ₽</span>
+              <span class="product-price__old">980 ₽</span>
+            </div>
+            <div class="items__wrapper items__wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+            <button class="product__btn">Добавить в корзину</button>
+          </article>
+         </li>
+         <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-1.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-2.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/m-3.jpg" alt="Мёд"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a>
+            <h3 class="product__title">
+              <a href="#">Забрус  1л</a>
+            </h3>
+            <div class="product__props">
+              <span class="product__rating">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                  />
+                </svg>
+                4,8
+              </span>
+              <span class="product__testimonials">4 отзыва</span>
+            </div>
+            <div class="product__info">
+              <span class="product__term">Артикул: 210104</span>
+              <span class="product__available">Есть в наличии</span>
+            </div>
+            <div class="product__price product-price">
+              <span class="product-price__current">800 ₽</span>
+              <span class="product-price__old">1100 ₽</span>
+            </div>
+            <div class="items__wrapper items__wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+            <button class="product__btn">Добавить в корзину</button>
+          </article>
+         </li>
+         <li class="products-grid__item">
+          <article class="product">
+            <a href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/s-1.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/s-2.jpg" alt="Мёд"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="images/s-3.jpg" alt="Мёд"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </a>
+            <h3 class="product__title">
+              <a href="#">Соты  1кг</a>
+            </h3>
+            <div class="product__props">
+              <span class="product__rating">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                  />
+                </svg>
+                4,5
+              </span>
+              <span class="product__testimonials">2 отзыва</span>
+            </div>
+            <div class="product__info">
+              <span class="product__term">Артикул: 210105</span>
+              <span class="product__available">Есть в наличии</span>
+            </div>
+            <div class="product__price product-price">
+              <span class="product-price__current">800 ₽</span>
+              <span class="product-price__old">850 ₽</span>
+            </div>
+            <div class="items__wrapper items__wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+            <button class="product__btn">Добавить в корзину</button>
+          </article>
+         </li>
+      </ul>
+     </div> 
+    </div>
+   </div>
+  </div>
+
+
+   
+
+</header>
+
+<div class="modal">
+  <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+    <div class="modal-content order-modal__content">
+      <div class="order-modal__top">
+        <h2 class="order-modal__title">Оформление заказа</h2>
+        <span class="order-modal__number">Заказ № 345667</span>
+      </div>
+      <div class="order-modal__info">
+        <div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span> </span></div>
+        <div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span> </span></div>
+        <div class="order-modal__products order-modal__info-item">
+          <button class="order-modal__btn">Заполните поля снизу и нажмите "Оформить заказ"  </button>
+          <ul class="order-modal__list">
+            
+          </ul>
+        </div>
+      </div>
+      <form action="#" class="order-modal__form order">
+        <input type="hidden" name="theme" value="Обратный звонок">
+        <input type="hidden" name="admin_email[]" value="everwoods21011993@gmail.com">
+        <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+        <label class="order__label">
+          <span class="order__text">Ваше имя</span>
+          <input type="text" name="Имя" class="order__input">
+        </label>
+        <label class="order__label">
+          <span class="order__text">Номер телефона</span>
+          <input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
+        </label>
+        <label class="order__label">
+          <span class="order__text">Ваше email</span>
+          <input type="email" name="Email" class="order__input" placeholder="everwoods@gmail.com">
+        </label>
+        <button class="order__btn btn">Оформить заказ</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="libs/modal/modal.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/simplebar.js"></script>
+<script src="js/product.js"></script>
+<script src="js/fixed-block.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+</body>
+</html>
